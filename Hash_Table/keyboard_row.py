@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[str]
         """
         line1, line2, line3 = set('qwertyuiop'), set('asdfghjkl'), set('zxcvbnm')
-        out = []
+        out = []       #list
         for i in words:
             w = set(i.lower())
             if w.issubset(line1) or w.issubset(line2) or w.issubset(line3):

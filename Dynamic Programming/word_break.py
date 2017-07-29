@@ -7,7 +7,7 @@ class Solution(object):
         :rtype: bool
         """
         n = len(s)
-        # t[i] indicates s[:i + 1] is such a string
+        
         out = [False for i in range(n)]
         for i in range(n):
             if s[:i + 1] in wordDict:
